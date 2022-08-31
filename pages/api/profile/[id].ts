@@ -17,6 +17,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
     const data = { user: user[0], userVideos, userLikedVideos };
 
+    
     res.status(200).json(data);
   }
 }
